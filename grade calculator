@@ -1,0 +1,23 @@
+name = input("What is your name? ")
+mark = int(input("What was your exam result? "))
+
+if 0 <= mark <= 100:
+    if mark >= 90:
+        result = "H1"
+    elif mark >= 80:
+        result = "H2"
+    elif mark >= 70:
+        result = "H3"
+    elif mark >= 60:
+        result = "H4"
+    elif mark >= 50:
+        result = "H5"
+    elif mark >= 40:
+        result = "H6"
+    elif mark >= 30:
+        result = "H7"
+    else:
+        result = "H8"
+    print("Ok,", name, "your result is",result)
+else:
+    print("That is not a valid number.")
